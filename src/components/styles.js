@@ -172,3 +172,8 @@ export const LogoUser = styled.img`
 export const LogoNetflix = styled.img`
     height:100% ;
 `;
+
+export const Footer = styled.footer`
+    margin: 50px 0;
+    text-align: center;
+`;

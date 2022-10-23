@@ -11,7 +11,7 @@ import
 
 export default () => {
     return(
-        <Header>
+        <Header >
             <HeaderContainer>
                 <a href="/">
                     <LogoNetflix src="https://upload.wikimedia.org/wikipedia/commons/archive/6/69/20220504140801%21Netflix_logo.svg"/>

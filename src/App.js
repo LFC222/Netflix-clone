@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import 
 {
   Lists,
+  Footer,
 } from './components/styles'
 
 export function App() {
@@ -45,6 +46,11 @@ export function App() {
             ))
           }
         </Lists>
+        <Footer >
+          Feito com <span role="img" aria-label="coração"> ❤</span><br/>
+          Direitos de imagens para Netflix<br/>
+          Dados pegos do site themoviedb.org
+        </Footer>
       </div>
     </>
   );
