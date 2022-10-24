@@ -24,6 +24,11 @@ export default function FeaturedMovie({item}){
         genres.push( item.genres[i].name )
     }
 
+    let description = item.overview;
+    if(description.length){
+        description = description.substring(0, 200) + '...';
+    }
+
 
     return(
         <FeaturedSection style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${item.backdrop_path})`}}>
@@ -35,7 +40,7 @@ export default function FeaturedMovie({item}){
                         <Year>{firstDate.getFullYear()}</Year>
                         <Seasons>{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</Seasons>
                     </InfoContainer>
-                    <DescriptionContainer>{item.overview}</DescriptionContainer>
+                    <DescriptionContainer>{description}</DescriptionContainer>
                     <ButtonsContainer>
                         <WatchButton href={`/watch/${item.id}`}>► Assistir</WatchButton>
                         <ListButton href={`/list/add/${item.id}`}>+ Minha Lista</ListButton>
