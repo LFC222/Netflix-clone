@@ -20,7 +20,7 @@ export const ItemContainer = styled.div`
 `;
 
 export const ListItem = styled.div`
-    width:999999999px ;
+    transition:all ease 0.5s ;
 `;
 
 export const Img = styled.img`
@@ -176,4 +176,44 @@ export const LogoNetflix = styled.img`
 export const Footer = styled.footer`
     margin: 50px 0;
     text-align: center;
+`;
+
+export const IconLeft = styled.div`
+    position:absolute;
+    width:40px;
+    height: 225px;
+    z-index: 99;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow:hidden;
+    background-color: rgba(0,0,0,0.6);
+    cursor:pointer;
+    opacity:0;
+    transition:all ease 0.5s;
+
+    &:hover{
+        opacity:1;
+    }
+`;
+
+export const IconRight = styled.div`
+    position:absolute;
+    width:40px;
+    height: 225px;
+    z-index: 99;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow:hidden;
+    background-color: rgba(0,0,0,0.6);
+    cursor:pointer;
+    opacity:0;
+    transition:all ease 0.5s;
+
+    &:hover{
+        opacity:1;
+    }
 `;
