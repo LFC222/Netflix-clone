@@ -8,6 +8,7 @@ import
 {
   Lists,
   Footer,
+  Loading,
 } from './components/styles'
 
 export function App() {
@@ -33,7 +34,7 @@ export function App() {
 
   return (
     <>
-      <div>
+      
         <Header />
         {
           featuredData &&
@@ -51,7 +52,13 @@ export function App() {
           Direitos de imagens para Netflix<br/>
           Dados pegos do site themoviedb.org
         </Footer>
-      </div>
+
+        {
+          movieList.length <= 0 &&
+            <Loading>
+              <img src='https://c.tenor.com/a6Pb69nsMwUAAAAM/on-fire-flames.gif' alt='carregando'/>
+            </Loading>
+        }
     </>
   );
 }
