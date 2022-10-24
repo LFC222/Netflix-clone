@@ -196,6 +196,10 @@ export const IconLeft = styled.div`
     &:hover{
         opacity:1;
     }
+
+    @media(max-width:760px){
+        opacity:1;
+    }
 `;
 
 export const IconRight = styled.div`
